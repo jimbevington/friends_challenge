@@ -27,17 +27,23 @@ def total_monies(people_array)
 end
 
 def lend_monies(lender, lendee, amount)
-  lender[:monies] = lender[:monies] - amount
-  lendee[:monies] = lendee[:monies] + amount
+  lender[:monies] -= amount
+  lendee[:monies] += amount
+  # lender[:monies] = lender[:monies] - amount
+  # lendee[:monies] = lendee[:monies] + amount
 end
 
 def all_the_foods(people_array)
   all_foods = [] # make an empty array
-  for person in people_array # loop through all the people
-    for food in person[:favourites][:things_to_eat] # loop thru food array
-      all_foods.push(food) # add each food to all_foods array
-    end
+  for person in people_array
+    all_foods.concat(person[:favourites][:things_to_eat])
   end
+  #
+  # for person in people_array # loop through all the people
+  #   for food in person[:favourites][:things_to_eat] # loop thru food array
+  #     all_foods.push(food) # add each food to all_foods array
+  #   end
+  # end
   return all_foods
 end
 
