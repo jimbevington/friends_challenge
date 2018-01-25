@@ -77,6 +77,7 @@ def same_fave_tv_show(people_array)
   for index in same_show_indices
     same_tv_show_people.push(people_array[index][:name])
   end
-  return same_tv_show_people
+  # sort the final array alphabetically
+  return same_tv_show_people.sort!
 end
 # what if they had more than one

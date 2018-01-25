@@ -151,10 +151,11 @@ class TestFriends < MiniTest::Test
     result = same_fave_tv_show(@people)
     assert_equal(["Ally", "John"], result)
   end
-  # 
+
+  ## THIS ONE TESTS IF YOU CAN HAVE MORE THAN ONE TV SHOW
   # def test__same_fave_tv_show_2
   #   result = same_fave_tv_show(@people)
-  #   assert_equal(["Ally", "John"], result)
+  #   assert_equal(["Steve", "Ally", "John", "Kenny"], result)
   # end
 
 end
