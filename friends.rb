@@ -58,7 +58,6 @@ def no_friends(people_array)
 end
 
 def same_fave_tv_show(people_array)
-
   # Put all the shows in an array so the index can be referenced
   tv_shows = [] # to store shows
   # put all the tv shows in an array
@@ -87,4 +86,3 @@ def same_fave_tv_show(people_array)
   # # sort the final array alphabetically
   # return same_tv_show_people.sort!
 end
-# what if they had more than one
